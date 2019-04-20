@@ -4,4 +4,4 @@ Quick C++ scripts I wrote to learn the language. These are not school exercises 
 
 | Date | C++ file  | Description |
 | ------------- | ------------- | ------------- |
-| 20/04/2019 | windows-keylogger.cpp  | A simple keylogger that'll work on most versions of Windows. It is in no way stealthy or properly optimized since the program just cycles through a bunch of given keys continiously, but it was a good exercise in working with strings and char's. If I were to build a real keylogger it shoud probably be event driven and log stuff to an external server instead of a local file. |
+| 20/04/2019 | windows-keylogger.cpp  | A simple keylogger that'll work on most versions of Windows. It is in no way stealthy or properly optimized since the program just cycles through a bunch of given keys continiously. If I were to build a real keylogger it shoud probably be event driven and log stuff to an external server instead of a local file. But this was a good exercise in working with strings and char's. |
