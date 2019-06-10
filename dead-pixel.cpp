@@ -6,7 +6,7 @@
 // GCC compiler args:
 // -lgdi32 -mwindows
 // 
-// gcc .\DeadPixel.cpp -o .\DeadPixel.exe -lgdi32 -mwindows
+// gcc .\dead-pixel.cpp -o .\DeadPixel.exe -lgdi32 -mwindows
 
 #include <Windows.h>
 #include <cstdlib>
