@@ -22,7 +22,7 @@ using string = std::string;
 string input()
 {
     std::cout << "(MESSAGE): ";
-    std::string message;
+    string message;
     std::getline(std::cin, message);
     message.append("\n");
     return message;
@@ -33,7 +33,7 @@ string input()
 void SendingThread(SOCKET AcceptingSocket)
 {
     // Now we can actually send stuff to the client using the new socket.
-    std::string message;
+    string message;
     while (1)
     {
         // Get the user input.
