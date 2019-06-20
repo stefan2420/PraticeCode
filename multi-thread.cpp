@@ -1,6 +1,6 @@
 // 18-05-2019 Matthijs Reyers
 // 
-// GCC compiler args:
+// Mingw64 compiler args:
 // -std=gnu++11
 // 
 // g++ .\multi-thread.cpp -std=gnu++11 -o .\multi-thread.exe
