@@ -3,10 +3,10 @@
 // https://docs.microsoft.com/en-us/windows/desktop/api/wingdi/nf-wingdi-rgb
 // https://docs.microsoft.com/en-us/windows/desktop/api/wingdi/nf-wingdi-setpixel
 //
-// GCC compiler args:
+// Mingw64 compiler args:
 // -lgdi32 -mwindows
 // 
-// gcc .\dead-pixel.cpp -o .\DeadPixel.exe -lgdi32 -mwindows
+// g++ .\dead-pixel.cpp -o .\DeadPixel.exe -lgdi32 -mwindows
 
 #include <Windows.h>
 #include <cstdlib>
