@@ -1,6 +1,6 @@
 // 18-05-2019 Matthijs Reyers
 // 
-// GCC compiler args:
+// Mingw64 compiler args:
 // -std=gnu++11 -lws2_32
 
 // These headers are used for windows socket communications over TCP/IP.
