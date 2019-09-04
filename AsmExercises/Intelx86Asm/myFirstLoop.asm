@@ -1,7 +1,6 @@
-; 02-09-2019
+; 03-09-2019
 ; 
-; Let is be known that this was the first assembly code I've ever writen. 
-; - Matthijs Reyers
+; First time using jump instructions.
 ;
 ; Assemble:
 ; nasm -f elf64 stuff.asm && ld stuff.o -o stuff
