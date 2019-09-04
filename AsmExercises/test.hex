@@ -1,0 +1,11 @@
+e0f0 e6e1 e800 8300 e008 83
+
+e200    ; 1110 0010 0000 0000 ; ldi r16, $20
+e010    ; 1110 0000 0001 0000 ; ldi r17, $0
+
+B904    ; 1110 xxxx xxxx xxxx ; out 4,r16
+
+B905    ; 1110 xxxx xxxx xxxx ; out 5, r16
+b915    ; 1110 xxxx xxxx xxxx ; out 5, r17
+
+C809    ; 1110 xxxx xxxx xxxx ; rjmp -3 = line 4
