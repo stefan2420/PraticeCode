@@ -72,24 +72,24 @@ main:
     ldi     r18, 210
     call    playNote
 
-    ldi     r16, 9        ; Play a B  (247 hz)
+    ldi     r16, 9          ; Play a B  (247 hz)
     ldi     r17, 234
     ldi     r18, 236
     call    playNote
 
-    ldi     r16, 158        ; Play a D (294 hz)
-    ldi     r17, 197
-    ldi     r18, 85
+    ldi     r16, 7          ; Play a D (294 hz)
+    ldi     r17, 251
+    ldi     r18, 215
     call    playNote
 
-    ldi     r16, 127        ; Play a C (262 hz)
-    ldi     r17, 174
-    ldi     r18, 120
+    ldi     r16, 8          ; Play a C (262 hz)
+    ldi     r17, 246
+    ldi     r18, 246
     call    playNote
 
-    ldi     r16, 185        ; Play an A (220 hz)
-    ldi     r17, 92
-    ldi     r18, 156
+    ldi     r16, 11        ; Play an A (220 hz)
+    ldi     r17, 221
+    ldi     r18, 186
     call    playNote
 
     call sendr16tolaptop    ; send r16 over serial when the 'song' ends (for debuging purposes)
