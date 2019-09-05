@@ -72,6 +72,11 @@ main:
     ldi     r18, 210
     call    playNote
 
+    ldi     r16, 7          ; Play an E (329 hz)
+    ldi     r17, 216
+    ldi     r18, 253
+    call    playNote 
+
     ldi     r16, 9          ; Play a B  (247 hz)
     ldi     r17, 234
     ldi     r18, 236
