@@ -38,7 +38,7 @@ ldi     r23, 0
 ldi     r24, $20
 
 ; Variable for how long to play the note.
-ldi     r25, $A
+ldi     r25, $7
 
 ; Start executing main code
 rjmp main
@@ -52,7 +52,7 @@ main:
     ; a custom Python script that helps calculate how many 
     ; loops to use to occelate at a certain frequenty.
 
-    ldi     r16, 7          ; Play an E (329 hz)
+    ldi     r16, 7          ; Play an E4 (329 hz)
     ldi     r17, 216
     ldi     r18, 253
     call    playNote 
@@ -62,7 +62,7 @@ main:
     ldi     r18, 210
     call    playNote
 
-    ldi     r16, 7          ; Play an E (329 hz)
+    ldi     r16, 7          ; Play an E4 (329 hz)
     ldi     r17, 216
     ldi     r18, 253
     call    playNote 
@@ -72,7 +72,7 @@ main:
     ldi     r18, 210
     call    playNote
 
-    ldi     r16, 7          ; Play an E (329 hz)
+     ldi     r16, 7          ; Play an E4 (329 hz)
     ldi     r17, 216
     ldi     r18, 253
     call    playNote 
@@ -87,7 +87,7 @@ main:
     ldi     r18, 215
     call    playNote
 
-    ldi     r16, 8          ; Play a C (262 hz)
+    ldi     r16, 8          ; Play a C4 (262 hz)
     ldi     r17, 246
     ldi     r18, 246
     call    playNote
@@ -96,6 +96,101 @@ main:
     ldi     r17, 221
     ldi     r18, 186
     call    playNote
+
+     ldi     r16, 17        ; Play an C3 (130.81 hz)
+    ldi     r17, 244
+    ldi     r18, 245
+    call    playNote
+
+     ldi     r16, 13        ; Play an E3 (164.81 hz)
+    ldi     r17, 250
+    ldi     r18, 244    
+    call    playNote
+
+
+    ldi     r16, 11        ; Play an A (220 hz)
+    ldi     r17, 221
+    ldi     r18, 186
+    call    playNote
+
+     ldi     r16, 9          ; Play a B  (247 hz)
+    ldi     r17, 234
+    ldi     r18, 236
+    call    playNote
+
+    ldi     r16, 13        ; Play an E3 (164.81 hz)
+    ldi     r17, 250
+    ldi     r18, 244    
+    call    playNote
+
+
+    ldi     r16, 10       ; Play an G#3 (207.65 hz)
+    ldi     r17, 253
+    ldi     r18, 251    
+    call    playNote
+
+      ldi     r16, 9          ; Play a B  (247 hz)
+    ldi     r17, 234
+    ldi     r18, 236
+    call    playNote
+
+    ldi     r16, 8          ; Play a C4 (262 hz)
+    ldi     r17, 246
+    ldi     r18, 246
+    call    playNote
+
+     ldi     r16, 13        ; Play an E3 (164.81 hz)
+    ldi     r17, 250
+    ldi     r18, 244    
+    call    playNote
+
+     ldi     r16, 7          ; Play an E4 (329 hz)
+    ldi     r17, 216
+    ldi     r18, 253
+    call    playNote 
+
+    ldi     r16, 7          ; Play a D# (311 hz)
+    ldi     r17, 236
+    ldi     r18, 210
+    call    playNote
+
+    ldi     r16, 7          ; Play an E4 (329 hz)
+    ldi     r17, 216
+    ldi     r18, 253
+    call    playNote 
+
+    ldi     r16, 7          ; Play a D# (311 hz)
+    ldi     r17, 236
+    ldi     r18, 210
+    call    playNote
+
+     ldi     r16, 7          ; Play an E4 (329 hz)
+    ldi     r17, 216
+    ldi     r18, 253
+    call    playNote 
+
+    ldi     r16, 9          ; Play a B  (247 hz)
+    ldi     r17, 234
+    ldi     r18, 236
+    call    playNote
+
+    ldi     r16, 7          ; Play a D (294 hz)
+    ldi     r17, 251
+    ldi     r18, 215
+    call    playNote
+
+    ldi     r16, 8          ; Play a C4 (262 hz)
+    ldi     r17, 246
+    ldi     r18, 246
+    call    playNote
+
+    ldi     r16, 11        ; Play an A (220 hz)
+    ldi     r17, 221
+    ldi     r18, 186
+    call    playNote
+
+
+
 
     call sendr16tolaptop    ; send r16 over serial when the 'song' ends (for debuging purposes)
 
